@@ -111,6 +111,7 @@ function EditView() {
                   <TableCell align="left">Borrowed By</TableCell>
                   <TableCell align="left">Date of Borrow</TableCell>
                   <TableCell align="left">Return Date</TableCell>
+                  <TableCell align="left">Edit</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -121,6 +122,7 @@ function EditView() {
                     <TableCell align="left">{books.borrowed_by}</TableCell>
                     <TableCell align="left">{books.date_of_borrow}</TableCell>
                     <TableCell align="left">{books.return_date}</TableCell>
+                    <TableCell align="left"> <EditIcon onClick={()=> {setOpen(true)}} /></TableCell>
                   </TableRow>
                 ))}
               </TableBody>
