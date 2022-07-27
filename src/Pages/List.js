@@ -36,13 +36,22 @@ function List() {
   return (
     <div>
       <Box style={{ margin: "35px" }}>
-        <Typography style={{ fontWeight: "bolder" }}>
-          Current Page: Lists of Students and Books
-        </Typography>
-        <Button variant="contained" component={Link} to="/EditView">
-          Go to Edit Page
-        </Button>
         <Container maxWidth="sm">
+          <Typography
+            style={{
+              fontWeight: "bolder",
+              fontSize: "40px",
+              textDecoration: "underline",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            List Page
+          </Typography>
+          <Button variant="contained" component={Link} to="/EditView">
+            Go to Edit Page
+          </Button>
           <Typography
             style={{
               display: "flex",
